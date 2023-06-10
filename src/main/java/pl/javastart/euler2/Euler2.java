@@ -13,20 +13,17 @@ public class Euler2 {
     }
 
     public static int calculateSum(int input) {
-        int sum = 2;
-        int f1 = 1;
-        int f2 = 2;
-        int next;
+        int sum = 0;
+        int f1 = 0;
+        int f2 = 1;
         do {
-            next = f1 + f2;
-            if (next > input) {
-                break;
-            } else if (next % 2 == 0) {
+            int next = f1 + f2;
+            if (next <= input && next % 2 == 0) {
                 sum += next;
             }
             f1 = f2;
             f2 = next;
-        } while (next < input);
+        } while (f2 < input);
         return sum;
     }
 }
