@@ -10,11 +10,13 @@ class Euler2Test {
         int sum = Euler2.calculateSum(1);
         assertEquals(0, sum);
     }
+
     @Test
     void shouldReturn2For2() {
         int sum = Euler2.calculateSum(2);
         assertEquals(2, sum);
     }
+
     @Test
     void shouldReturn2For7() {
         int sum = Euler2.calculateSum(7);
