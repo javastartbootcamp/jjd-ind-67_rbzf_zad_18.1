@@ -11,7 +11,7 @@ class Euler2Test {
         assertEquals(0, sum);
     }
     @Test
-    void shouldReturn2For2() {
+    void shouldReturn2For2(){
         int sum = Euler2.calculateSum(2);
         assertEquals(2, sum);
     }
